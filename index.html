@@ -44,16 +44,18 @@
           <li class="item">
             <a href=" mailto:info@devstudio.com" class="contact header">
               <svg class="mail-ikon">
-                <use href="./image/symbol-defs.svg#icon-envelope"></use></svg>
+                <use href="./image/symbol-defs.svg#icon-envelope"></use>
+              </svg>
               <span>info@devstudio.com</span>
-              </a>
+            </a>
           </li>
           <li class="item">
             <a href="tel:+380961111111" class="contact header">
               <svg class="telefon-ikon">
-                <use href="./image/symbol-defs.svg#icon-smartphone"></use></svg>
+                <use href="./image/symbol-defs.svg#icon-smartphone"></use>
+              </svg>
               <span>+38 096 111 11 11</span>
-              </a>
+            </a>
           </li>
         </ul>
       </div>
@@ -64,7 +66,11 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="button primery button-hero" data-modal-open>
+          <button
+            type="button"
+            class="button primery button-hero"
+            data-modal-open
+          >
             Замовити послугу
           </button>
         </div>
@@ -133,7 +139,7 @@
             <li class="item">
               <div class="item-overlay">
                 <img src="./image/box1.jpg" width="370" alt="клавіатура" />
-               
+
                 <div class="item-box">
                   <p class="text-item-overlay">Десктопні додатки</p>
                 </div>
@@ -142,17 +148,16 @@
             <li class="item">
               <div class="item-overlay">
                 <img src="./image/box2.jpg" width="370" alt="телефон" />
-               
+
                 <div class="item-box">
                   <p class="text-item-overlay">Мобільні додатки</p>
                 </div>
               </div>
-             
             </li>
             <li class="item">
               <div class="item-overlay">
                 <img src="./image/box3.jpg" width="370" alt="телефон" />
-               
+
                 <div class="item-box">
                   <p class="text-item-overlay">Дизайнерські</p>
                 </div>
@@ -546,79 +551,74 @@
             </li>
           </ul>
         </div>
-        <div class="footer-add">
-          <p class="add-title">приєднуйтесь</p>
-          <ul class="social">
-            <li class="social-li">
-              <a
-                class="social-link social-link-add"
-                href="https://www.instagram.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg class="social-ikon-item add">
-                  <use href="./image/symbol-defs.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-li">
-              <a
-                class="social-link social-link-add"
-                href="https://www.instagram.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg class="social-ikon-item add">
-                  <use href="./image/symbol-defs.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-li">
-              <a
-                class="social-link social-link-add"
-                href="https://www.instagram.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg class="social-ikon-item add">
-                  <use href="./image/symbol-defs.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-li">
-              <a
-                class="social-link social-link-add"
-                href="https://www.instagram.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg class="social-ikon-item add">
-                  <use href="./image/symbol-defs.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+
         <div class="footer-subscription">
           <p class="subscription-title">Підпишіться на розсилку</p>
-          <label for="mail">E-mail</label>
-          <input type="email" name="mail" id="mail">
-          <button type="button" class="subscription-button">
-          Підписатися
-            <svg class="subscription-icon">
-              <use href="./image/symbol-defs.svg#icon-icon-send"></use>
-            </svg>
-          </button>
+
+          <form name="subscription" class="form-subscription">
+            <input
+              type="email"
+              name="mail"
+              id="mail"
+              class="input-subscription"
+            />
+            <button type="submit" class="subscription-button">
+              Підписатися
+              <svg class="subscription-icon">
+                <use href="./image/symbol-defs.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal >
+    <div class="backdrop is-hidden" data-modal>
       <div class="hero-modal">
-        <button type="button" class="close-btn" data-modal-close >
-        <svg class="close-icon">
-          <use href="./image/symbol-defs.svg#icon-close"></use>
-        </svg>
-      </button>
+        <button type="button" class="close-btn" data-modal-close>
+          <svg class="close-icon">
+            <use href="./image/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+        <form class="request">
+          <h2 class="request-title">Залиште свої дані, ми вам передзвонимо</h2>
+
+          <label for="name" class="request-item">
+            Ім'я
+            <input type="text" name="name" id="name" class="request-input" />
+          </label>
+
+          <label for="tel" class="request-item">
+            Телефон
+            <input type="number" name="tel" id="tel" class="request-input" />
+          </label>g
+
+          <label for="mail" class="request-item">
+            Пошта
+            <input type="email" name="mail" id="mail" class="request-input" />
+          </label>
+
+          <label for="commit" class="request-item">
+            Коментар
+            <textarea
+              name="commit"
+              rows="5"
+              id="commit"
+              class="text-commit"
+              placeholder="Введіть текст"
+            ></textarea>
+          </label>
+
+          <label for="agree" class="request-agree">
+            <input type="checkbox" name="consent" value="agree" id="commit" />
+
+            <p>
+              Погоджуюся з розсилкою та приймаю
+              <a href="#" class="agree-link">Умови договору</a>
+            </p>
+          </label>
+
+          <button type="submit" class="request-btn">Відправити</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
