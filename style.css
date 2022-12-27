@@ -203,15 +203,12 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  
-  
-  
 }
 .contact-header {
   display: flex;
   margin-left: auto;
   justify-content: baseline;
-  transition: color 250ms  cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-header {
@@ -240,8 +237,7 @@ header {
   line-height: 1.7;
   letter-spacing: 0.03em;
   text-decoration: none;
-  transition: color 250ms  cubic-bezier(0.4, 0, 0.2, 1);
-
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-footer:hover,
@@ -265,8 +261,7 @@ header {
   text-align: center;
   letter-spacing: 0.03em;
 
-  transition: background-color 250ms  cubic-bezier(0.4, 0, 0.2, 1);
-  
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero .button-hero {
@@ -475,15 +470,14 @@ header {
   border-radius: 50%;
   width: 44px;
   height: 44px;
-  transition: background-color 250ms  cubic-bezier(0.4, 0, 0.2, 1);
-  
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-ikon-item {
   width: 20px;
   height: 20px;
   fill: #afb1b8;
-  transition: fill 250ms  cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-link:hover,
 .social-link:focus {
@@ -522,7 +516,7 @@ header {
   justify-content: center;
   align-items: center;
 }
-.clients-link{
+.clients-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -530,14 +524,14 @@ header {
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  
-  transition: border 250ms  cubic-bezier(0.4, 0, 0.2, 1);
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .client-ikon-item {
   width: 106px;
   height: 60px;
   fill: #afb1b8;
-  transition: fill 250ms  cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-item:focus .client-ikon-item,
 .clients-item:hover .client-ikon-item {
@@ -575,10 +569,10 @@ header {
   line-height: 1.7;
   letter-spacing: 0.03em;
   text-decoration: none;
-  transition: color 250ms  cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .adress:hover,
-.adress:focus{
+.adress:focus {
   color: var(--active-color);
 }
 .contact-footer {
@@ -608,7 +602,6 @@ header {
 .footer-add {
   display: flex;
   flex-direction: column;
-
 }
 .footer-contacts {
   display: flex;
@@ -620,9 +613,39 @@ header {
 .add {
   fill: #ffffff;
 }
-.footer-subscription{
+.footer-subscription {
   display: flex;
-  flex-direction: column
+
+  justify-content: center;
+  align-items: center;
+}
+.subscription-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--primery-bg-color);
+}
+.subscription-button {
+  background-color: var(--active-color);
+  width: 200px;
+  height: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1, 88;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--primery-bg-color);
+}
+.subscription-icon {
+  width: 24px;
+  height: 24px;
+  fill: var(--primery-bg-color);
 }
 /* Portfolio styles */
 
@@ -640,13 +663,13 @@ header {
   margin-bottom: 50px;
   margin-left: auto;
   margin-right: auto;
-  transition: color 250ms cubic-bezier(0.47, 0, 0.745, 0.715),background-color 250ms cubic-bezier(0.47, 0, 0.745, 0.715);
+  transition: color 250ms cubic-bezier(0.47, 0, 0.745, 0.715),
+    background-color 250ms cubic-bezier(0.47, 0, 0.745, 0.715);
 }
 .portfolio {
   display: flex;
   flex-wrap: wrap;
   gap: 30px 30px;
-  
 }
 .portfolio-element {
   max-width: calc((100% - 60px) / 3);
@@ -701,14 +724,14 @@ header {
   height: 100%;
   opacity: 0;
   top: 100%;
-   
-   transition: transform 250ms cubic-bezier(0.075, 0.82, 0.165, 1),
-  opacity 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
+
+  transition: transform 250ms cubic-bezier(0.075, 0.82, 0.165, 1),
+    opacity 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .portfolio-link:hover .portfolio-before::before,
 .portfolio-link:focus .portfolio-before::before {
   opacity: 1;
- transform: translateY(-100%) ;
+  transform: translateY(-100%);
 }
 .portfolio-before-text {
   color: var(--primery-bg-color);
@@ -723,17 +746,17 @@ header {
   left: 0;
   padding: 63px 24px;
   opacity: 0;
-  top:100%;
+  top: 100%;
   transition: transform 250ms cubic-bezier(0.075, 0.82, 0.165, 1),
-  opacity 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
+    opacity 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-.portfolio-link{
+.portfolio-link {
   display: block;
 }
 .portfolio-link:hover .text-o,
 .portfolio-link:focus .text-o {
   opacity: 1;
-  transform: translateY(-100%) ;
+  transform: translateY(-100%);
 }
 .backdrop {
   position: fixed;
@@ -767,7 +790,7 @@ header {
   align-items: center;
   margin-left: auto;
   position: absolute;
-  top:8px;
+  top: 8px;
   right: 8px;
   /* margin-right: 8px;
   margin-top: 8px; */
