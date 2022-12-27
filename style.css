@@ -620,6 +620,10 @@ header {
 .add {
   fill: #ffffff;
 }
+.footer-subscription{
+  display: flex;
+  flex-direction: column
+}
 /* Portfolio styles */
 
 .buttons-portfolio .button:hover,
