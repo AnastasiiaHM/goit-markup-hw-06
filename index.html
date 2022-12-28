@@ -556,12 +556,15 @@
           <p class="subscription-title">Підпишіться на розсилку</p>
 
           <form name="subscription" class="form-subscription">
-            <input
+           
+            <label >
+              <input
               type="email"
               name="mail"
-              id="mail"
+              placeholder="E-mail"
               class="input-subscription"
             />
+            </label>
             <button type="submit" class="subscription-button">
               Підписатися
               <svg class="subscription-icon">
@@ -583,34 +586,50 @@
           <h2 class="request-title">Залиште свої дані, ми вам передзвонимо</h2>
 
           <label for="name" class="request-item">
-            Ім'я
+            <span class="request-label">Імя</span>
+
             <input type="text" name="name" id="name" class="request-input" />
+            <svg class="input-icon">
+              <use href="./image/symbol-defs.svg#icon-name-modal"></use>
+            </svg>
           </label>
 
           <label for="tel" class="request-item">
             Телефон
-            <input type="number" name="tel" id="tel" class="request-input" />
-          </label>g
 
-          <label for="mail" class="request-item">
-            Пошта
-            <input type="email" name="mail" id="mail" class="request-input" />
+            <input type="tel" name="tel" id="tel" class="request-input" />
+            <svg class="input-icon">
+              <use href="./image/symbol-defs.svg#icon-phone-modal"></use>
+            </svg>
           </label>
 
-          <label for="commit" class="request-item">
+          <label class="request-item">
+            Пошта
+
+            <input type="email" name="mail" class="request-input" />
+            <svg class="input-icon">
+              <use href="./image/symbol-defs.svg#icon-email-modal"></use>
+            </svg>
+          </label>
+
+          <label class="request-item">
             Коментар
             <textarea
               name="commit"
               rows="5"
-              id="commit"
               class="text-commit"
               placeholder="Введіть текст"
             ></textarea>
           </label>
 
-          <label for="agree" class="request-agree">
-            <input type="checkbox" name="consent" value="agree" id="commit" />
-
+          <label class="request-agree fixed">
+            <input
+              class="agree-input"
+              type="checkbox"
+              name="consent"
+              value="agree"
+            />
+            <span class="agree-icon"></span>
             <p>
               Погоджуюся з розсилкою та приймаю
               <a href="#" class="agree-link">Умови договору</a>
