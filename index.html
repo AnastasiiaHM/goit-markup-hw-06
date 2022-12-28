@@ -586,9 +586,9 @@
           <h2 class="request-title">Залиште свої дані, ми вам передзвонимо</h2>
 
           <label for="name" class="request-item">
-            <span class="request-label">Імя</span>
+            Імя
 
-            <input type="text" name="name" id="name" class="request-input" />
+            <input type="text" name="name" id="name" class="request-input" required/>
             <svg class="input-icon">
               <use href="./image/symbol-defs.svg#icon-name-modal"></use>
             </svg>
@@ -597,7 +597,7 @@
           <label for="tel" class="request-item">
             Телефон
 
-            <input type="tel" name="tel" id="tel" class="request-input" />
+            <input type="tel" name="tel" id="tel" class="request-input" required/>
             <svg class="input-icon">
               <use href="./image/symbol-defs.svg#icon-phone-modal"></use>
             </svg>
@@ -606,7 +606,7 @@
           <label class="request-item">
             Пошта
 
-            <input type="email" name="mail" class="request-input" />
+            <input type="email" name="mail" class="request-input" required />
             <svg class="input-icon">
               <use href="./image/symbol-defs.svg#icon-email-modal"></use>
             </svg>
@@ -630,10 +630,10 @@
               value="agree"
             />
             <span class="agree-icon"></span>
-            <p>
+            <span class="agree-text">
               Погоджуюся з розсилкою та приймаю
               <a href="#" class="agree-link">Умови договору</a>
-            </p>
+            </span>
           </label>
 
           <button type="submit" class="request-btn">Відправити</button>
