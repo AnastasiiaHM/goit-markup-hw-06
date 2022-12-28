@@ -251,7 +251,6 @@ header {
   color: var(--active-color);
 }
 
-
 /*Button*/
 .button {
   border-radius: 4px;
@@ -643,10 +642,12 @@ header {
   width: 358px;
   height: 50px;
   background-color: #2f303a;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  outline: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   margin-right: 12px;
+  color: var(--button-color);
+  padding-left: 16px;
 }
 
 .subscription-button {
@@ -850,6 +851,13 @@ header {
   height: 100%;
   display: flex;
   flex-direction: column;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+
+  color: var(--primery-text-color);
 }
 .request-title {
   margin-bottom: 12px;
@@ -867,15 +875,6 @@ header {
   margin-bottom: 10px;
   position: relative;
 }
-.request-label {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.2;
-  letter-spacing: 0.01em;
-
-  color: var(--primery-text-color);
-  margin-bottom: 4px;
-}
 
 .request-input {
   display: block;
@@ -884,6 +883,7 @@ header {
   border-radius: 4px;
   padding-left: 42px;
   transition: outline-color 250ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  margin-top: 4px;
 }
 .request-input:focus {
   outline-color: var(--active-color);
@@ -893,7 +893,7 @@ header {
   width: 18px;
   height: 18px;
 
-  bottom: 15px;
+  bottom: 12px;
   left: 12px;
   display: block;
   fill: var(--secondary-text-color);
@@ -901,14 +901,20 @@ header {
 .request-input:focus + .input-icon {
   fill: var(--active-color);
 }
+.text-commit {
+  display: block;
+  margin-top: 4px;
+  width: 448px;
+  height: 120px;
+}
 .request-agree {
   display: flex;
-
+  justify-content: center;
   align-items: center;
 
   font-weight: 400;
   font-size: 14px;
-  line-height: 1, 7;
+  line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--primery-text-color);
   margin-bottom: 34px;
@@ -919,6 +925,7 @@ header {
   height: 15px;
   outline: 2px solid var(--secondary-text-color);
   margin-right: 7px;
+  border-radius: 4px;
 }
 .agree-text {
   display: block;
@@ -945,7 +952,7 @@ header {
 } */
 .agree-link {
   color: var(--active-color);
-  text-decoration: underline;
+  border-bottom: 1px solid var(--active-color);
 }
 .group-request {
   display: block;
@@ -966,6 +973,14 @@ header {
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--primery-bg-color);
+  transition: background-color 250ms cubic-bezier(0.455, 0.03, 0.515, 0.955),
+    box-shadow 250ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.request-btn:hover {
+  background-color: rgba(24, 140, 232, 1);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .text-commit {

@@ -557,14 +557,13 @@
           <p class="subscription-title">Підпишіться на розсилку</p>
 
           <form name="subscription" class="form-subscription">
-           
-            <label >
+            <label>
               <input
-              type="email"
-              name="mail"
-              placeholder="E-mail"
-              class="input-subscription"
-            />
+                type="email"
+                name="mail"
+                placeholder="E-mail"
+                class="input-subscription"
+              />
             </label>
             <button type="submit" class="subscription-button">
               Підписатися
@@ -584,12 +583,17 @@
           </svg>
         </button>
         <form class="request">
-          <h2 class="request-title">Залиште свої дані, ми вам передзвонимо</h2>
+          <p class="request-title">Залиште свої дані, ми вам передзвонимо</p>
 
           <label for="name" class="request-item">
-            Імя
-
-            <input type="text" name="name" id="name" class="request-input" required/>
+            Ім'я
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="request-input"
+              required
+            />
             <svg class="input-icon">
               <use href="./image/symbol-defs.svg#icon-name-modal"></use>
             </svg>
@@ -598,7 +602,13 @@
           <label for="tel" class="request-item">
             Телефон
 
-            <input type="tel" name="tel" id="tel" class="request-input" required/>
+            <input
+              type="tel"
+              name="tel"
+              id="tel"
+              class="request-input"
+              required
+            />
             <svg class="input-icon">
               <use href="./image/symbol-defs.svg#icon-phone-modal"></use>
             </svg>
@@ -623,7 +633,7 @@
             ></textarea>
           </label>
 
-          <label class="request-agree fixed">
+          <label class="request-agree">
             <input
               class="agree-input"
               type="checkbox"
